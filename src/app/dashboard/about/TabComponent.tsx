@@ -17,25 +17,39 @@ const TabComponent: NextPage = () => {
     <div>
       <Tabs isFitted variant="enclosed">
         <TabList>
-          <Tab>Languages</Tab>
-          <Tab>Web Technologies</Tab>
-          <Tab>Databases</Tab>
+          <Tab fontFamily="monospace" fontWeight="bold">
+            Languages
+          </Tab>
+          <Tab fontFamily="monospace" fontWeight="bold">
+            Web Technologies
+          </Tab>
+          <Tab fontFamily="monospace" fontWeight="bold">
+            Databases
+          </Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
             <div className="flex space-x-48 mt-8">
               <div className="flex gap-4">
-              <Heading>Javascript</Heading>
-              <TbBrandJavascript size={48} />
+                <Heading>Javascript</Heading>
+                <TbBrandJavascript size={48} />
               </div>
-              <CircularProgress value={30} color="orange.400" thickness='12px' />
+              <CircularProgress
+                value={30}
+                color="orange.400"
+                thickness="12px"
+              />
             </div>
             <div className="flex space-x-48 mt-8">
               <div className="flex gap-4">
-              <Heading>NodeJS</Heading>
-              <TbBrandNodejs size={48} />
+                <Heading>NodeJS</Heading>
+                <TbBrandNodejs size={48} />
               </div>
-              <CircularProgress value={30} color="orange.400" thickness='12px' />
+              <CircularProgress
+                value={30}
+                color="orange.400"
+                thickness="12px"
+              />
             </div>
           </TabPanel>
         </TabPanels>
