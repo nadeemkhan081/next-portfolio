@@ -34,7 +34,7 @@ const About: NextPage = () => {
           <span style={{ color: "red" }}>React</span> Developer
         </Heading>
         <Text textAlign="justify" mt={8} fontSize={18} fontWeight={600}>
-          "I am a skilled and passionate React developer with 1 year of
+        &quot;I am a skilled and passionate React developer with 1 year of
           experience in building dynamic and interactive web applications.
           Proficient in JavaScript, HTML, CSS, and other relevant technologies
           like React, NextJS, erpNext etc. I excel at leveraging React to create
@@ -44,7 +44,7 @@ const About: NextPage = () => {
           can contribute innovative ideas and solutions to drive project
           success. Continuously staying updated with the latest industry trends
           and best practices, I am dedicated to delivering high-quality code and
-          exceeding client expectations."
+          exceeding client expectations.&quot;
         </Text>
       </Box>
       <Box width="1px" bg="gray.300" />
