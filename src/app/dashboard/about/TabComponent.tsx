@@ -21,20 +21,20 @@ import {
   TbBrandCss3,
   TbBrandTailwind,
 } from "react-icons/tb";
-import { SiMui } from "react-icons/si";
+import { SiMui, SiExpress, SiPython } from "react-icons/si";
 
 const TabComponent: NextPage = () => {
   return (
     <div>
       <Tabs isFitted variant="enclosed">
-        <TabList>
-          <Tab fontFamily="monospace" fontWeight="bold">
+        <TabList bg={'grey'}>
+          <Tab fontFamily="monospace" fontWeight="bold"  fontSize={'x-large'}>
             Languages
           </Tab>
-          <Tab fontFamily="monospace" fontWeight="bold">
+          <Tab fontFamily="monospace" fontWeight="bold"  fontSize={'x-large'}>
             Web Technologies
           </Tab>
-          <Tab fontFamily="monospace" fontWeight="bold">
+          <Tab fontFamily="monospace" fontWeight="bold"  fontSize={'x-large'}>
             Databases
           </Tab>
         </TabList>
@@ -65,6 +65,32 @@ const TabComponent: NextPage = () => {
                     <Th>
                       <CircularProgress
                         value={30}
+                        color="orange.400"
+                        thickness="12px"
+                      />
+                    </Th>
+                  </Tr>
+                  <Tr>
+                    <Th fontSize={24}>Express</Th>
+                    <Th>
+                      <SiExpress size={48} />
+                    </Th>
+                    <Th>
+                      <CircularProgress
+                        value={60}
+                        color="orange.400"
+                        thickness="12px"
+                      />
+                    </Th>
+                  </Tr>
+                  <Tr>
+                    <Th fontSize={24}>Python</Th>
+                    <Th>
+                      <SiPython size={48} />
+                    </Th>
+                    <Th>
+                      <CircularProgress
+                        value={60}
                         color="orange.400"
                         thickness="12px"
                       />
