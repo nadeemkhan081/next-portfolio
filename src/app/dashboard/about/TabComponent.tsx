@@ -19,7 +19,14 @@ import {
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { FaReact } from "react-icons/fa";
-import { TbBrandJavascript, TbBrandNodejs, TbBrandNextjs, TbBrandHtml5, TbBrandCss3, TbBrandTailwind } from "react-icons/tb";
+import {
+  TbBrandJavascript,
+  TbBrandNodejs,
+  TbBrandNextjs,
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandTailwind,
+} from "react-icons/tb";
 import { SiMui } from "react-icons/si";
 
 const TabComponent: NextPage = () => {
@@ -38,31 +45,40 @@ const TabComponent: NextPage = () => {
           </Tab>
         </TabList>
         <TabPanels>
-
           {/* ===========================LANGUAGES============================ */}
           <TabPanel>
-            <div className="flex space-x-48 mt-8">
-              <div className="flex gap-4">
-                <Heading>Javascript</Heading>
-                <TbBrandJavascript size={48} />
-              </div>
-              <CircularProgress
-                value={30}
-                color="orange.400"
-                thickness="12px"
-              />
-            </div>
-            <div className="flex space-x-48 mt-8 ">
-              <div className="flex gap-4">
-                <Heading>NodeJS</Heading>
-                <TbBrandNodejs size={48} />
-              </div>
-              <CircularProgress
-                value={30}
-                color="orange.400"
-                thickness="12px"
-              />
-            </div>
+            <TableContainer>
+              <Table variant="simple">
+                <Thead>
+                  <Tr>
+                    <Th fontSize={24}>JavaScript</Th>
+                    <Th>
+                      <TbBrandJavascript size={48} />
+                    </Th>
+                    <Th>
+                      <CircularProgress
+                        value={30}
+                        color="orange.400"
+                        thickness="12px"
+                      />
+                    </Th>
+                  </Tr>
+                  <Tr>
+                    <Th fontSize={24}>NodeJS</Th>
+                    <Th>
+                      <TbBrandNodejs size={48} />
+                    </Th>
+                    <Th>
+                      <CircularProgress
+                        value={30}
+                        color="orange.400"
+                        thickness="12px"
+                      />
+                    </Th>
+                  </Tr>
+                </Thead>
+              </Table>
+            </TableContainer>
           </TabPanel>
 
           {/* =====================WEB TECHNOLOGIES=========================== */}
