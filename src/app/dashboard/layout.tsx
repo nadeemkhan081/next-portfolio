@@ -16,21 +16,21 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = (props) => {
             <PiBagSimpleBold size={28} />
             <Heading fontSize='x-large' fontFamily='sans-serif'>NADEEM KHAN</Heading>
           </div>
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-8 text-lg">
             <Link href="/">
-              <li>Home</li>
+              <li className="hover:text-red-500">Home</li>
             </Link>
             <Link href="/dashboard/about">
-              <li>About Me</li>
+              <li className="hover:text-red-500">About Me</li>
             </Link>
             <Link href="/dashboard/experience">
-              <li>Experience</li>
+              <li className="hover:text-red-500">Experience</li>
             </Link>
             <Link href="/dashboard/education">
-              <li>Education</li>
+              <li className="hover:text-red-500">Education</li>
             </Link>
             <Link href="/dashboard/contact">
-              <li>Contact Me</li>
+              <li className="hover:text-red-500">Contact Me</li>
             </Link>
           </ul>
         </nav>

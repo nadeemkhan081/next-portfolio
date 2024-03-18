@@ -38,7 +38,9 @@ const Contact: NextPage = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="w-1/2">
+
+
+    <form ref={form} onSubmit={sendEmail} className="w-1/3">
       <FormControl>
         <FormLabel>Name</FormLabel>
         <Input type="text" name="user_name" />
@@ -54,7 +56,7 @@ const Contact: NextPage = () => {
         <Textarea name="message" rows={8} />
       </FormControl>{" "}
       <br />
-      <Button colorScheme="blue" type="submit">
+      <Button colorScheme="blue" type="submit" _hover={{background: 'violet'}}>
         Send
       </Button>
     </form>
